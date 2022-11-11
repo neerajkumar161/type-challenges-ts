@@ -25,7 +25,7 @@ type TupleToObject<T extends readonly any[]> = { [K in T[number]]: K }
 //   ^?
 
 /* _____________ Test Cases _____________ */
-import type { Equal, Expect } from './utils'
+import type { Equal, Expect } from '../utils'
 
 const tuple = ['tesla', 'model 3', 'model X', 'model Y'] as const
 type t = typeof tuple
