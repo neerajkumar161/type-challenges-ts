@@ -26,7 +26,7 @@
 type Concat<T extends any[], U extends any[]> = [...T, ...U]
 
 /* _____________ Test Cases _____________ */
-import type { Equal, Expect } from '..//utils'
+import type { Equal, Expect } from '@type-challenges/utils'
 
 type cases = [
   Expect<Equal<Concat<[], []>, []>>,

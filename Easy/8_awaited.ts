@@ -33,7 +33,7 @@ type MyAwaited<T extends PromiseLike<any>> = T extends PromiseLike<infer U>  ?
 // type MyAwaited<T extends PromiseLike<any>> = T extends PromiseLike<infer R> ? (
 //   R extends PromiseLike<any> ? MyAwaited<R> : R)  : never 
 /* _____________ Test Cases _____________ */
-import type { Equal, Expect } from '../utils'
+import type { Equal, Expect } from '@type-challenges/utils'
 
 type X = Promise<string>
 type Y = Promise<{ field: number }>
